@@ -1,0 +1,68 @@
+{
+  "scope": "node",
+  "layer_id": "geo-es",
+  "target_environments": [
+    "dev"
+  ],
+  "representation_context": {
+    "view_archetype": "knowledge-stewardship-portal",
+    "active_templates": [
+      "universal-base",
+      "science-base",
+      "scientific-methodology",
+      "geo-es",
+      "node-work-cockpit"
+    ],
+    "public_node_identity": {
+      "node_id": "geo-es",
+      "display_name": "Spain Territorial Organization (ISO 3166-2:ES), Autonomous Communities & Bioregional Atlas",
+      "canonical_domain": "geo-es.knowledge.local",
+      "public_url": "https://github.com/mtwuser/geo-es.git",
+      "governing_root_id": "geo-es",
+      "root_0_public_approved": true,
+      "bridge_mode": "canonical-public-knowledge",
+      "attestation_digest": "6e55c99856becd92",
+      "recognizable_in_network": true
+    },
+    "workstation_config": null,
+    "academic_study_state": null
+  },
+  "own_node_ledger": {
+    "trackers": {
+      "WORKROAD.md": {
+        "exists": true,
+        "open": 0,
+        "in_progress": 0,
+        "completed": 1
+      },
+      "WORKTASK.md": {
+        "exists": true,
+        "open": 0,
+        "in_progress": 0,
+        "completed": 1
+      },
+      "WORKVALI.md": {
+        "exists": false,
+        "open": 0,
+        "in_progress": 0,
+        "completed": 0
+      },
+      "BACKLOG.md": {
+        "exists": true,
+        "open": 1,
+        "in_progress": 0,
+        "completed": 0
+      }
+    },
+    "total_open_items": 1,
+    "total_in_progress_items": 0,
+    "total_completed_items": 2,
+    "active_node_tasks": []
+  },
+  "knowledge_docs": [
+    "docs/README.md",
+    "docs/architecture/01_territorial_organization_and_bioregional_model.md",
+    "docs/guides/01_territorial_logistics_and_bioregional_sourcing_guide.md",
+    "docs/reference/01_iso_3166_2_es_autonomous_communities_and_provinces.md"
+  ]
+}

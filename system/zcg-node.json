@@ -1,0 +1,109 @@
+{
+  "schema_version": "zcg-node-v1",
+  "layer_id": "geo-es",
+  "layer_role": "knowledge",
+  "precedence": 20,
+  "entity_kind": "open-source",
+  "governing_root_id": "geo-es",
+  "visibility": "public",
+  "stewardship_stage": "public-community",
+  "public_url": "https://github.com/mtwuser/geo-es.git",
+  "canonical_authority_url": "https://github.com/ign-cnig-es/geo-es.git",
+  "description": "Spain Territorial Organization (ISO 3166-2:ES), Autonomous Communities & Bioregional Atlas",
+  "upstream_layer": {
+    "layer_id": "mtwuser/zero-cloud-gravity",
+    "repository": "https://github.com/mtwuser/zero-cloud-gravity.git",
+    "branch": "master"
+  },
+  "mounted_layers_dir": "layers",
+  "mounted_layers": [],
+  "default_stack_templates": [
+    "science-base",
+    "scientific-methodology",
+    "geo-es",
+    "node-work-cockpit"
+  ],
+  "baseline_guardrails": [
+    "Enforce geo-es E3..E1 primary-source citation_receipt integrity"
+  ],
+  "surface_bindings": [
+    {
+      "binding_id": "geo-es-surface-binding",
+      "description": "Spain Territorial Organization (ISO 3166-2:ES), Autonomous Communities & Bioregional Atlas",
+      "mode": "authoritative",
+      "target_globs": [
+        "*"
+      ],
+      "architectural_planes": [
+        "*"
+      ],
+      "scopes": [
+        "*"
+      ],
+      "traits": [
+        "*"
+      ],
+      "default_resolution": "L2",
+      "invariants": [
+        "Enforce geo-es (context-stack) rules and canonical assets"
+      ],
+      "rule_files": [
+        "templates/geo-es/rules/geo-es.md"
+      ],
+      "canonical_templates": [
+        "templates/geo-es/skills/geo-es-guide/SKILL.md",
+        "templates/geo-es/assets/canonical_snippet.md"
+      ]
+    }
+  ],
+  "environments": {
+    "dev": {
+      "description": "Local geo-es curation workspace",
+      "access_mode": "read-write-local",
+      "default_guardrails": [
+        "Verify geo-es primary citations"
+      ]
+    },
+    "tst": {
+      "description": "Validation environment for geo-es",
+      "access_mode": "read-and-test-trigger",
+      "default_guardrails": [
+        "Verify geo-es rcap1 capsules"
+      ]
+    },
+    "pre": {
+      "description": "Staging audit for geo-es",
+      "access_mode": "strictly-read-only",
+      "default_guardrails": [
+        "Audit geo-es citation drift"
+      ]
+    },
+    "pro": {
+      "description": "Canonical public corpus for geo-es",
+      "access_mode": "strictly-read-only-audited",
+      "default_guardrails": [
+        "Enforce geo-es E3..E1 immutability"
+      ]
+    }
+  },
+  "federated_mcps": [],
+  "layer_authority": {
+    "owner_role": "geo-es Knowledge Steward",
+    "authorized_emails": [
+      "mtwuser@users.noreply.github.com"
+    ],
+    "escalation_contact": "geo-es Knowledge Steward <mtwuser@users.noreply.github.com>",
+    "roster": {
+      "owners": [
+        {
+          "email": "mtwuser@users.noreply.github.com",
+          "title": "geo-es Knowledge Steward",
+          "squad": ""
+        }
+      ],
+      "maintainers": [],
+      "validators": [],
+      "members": []
+    }
+  }
+}

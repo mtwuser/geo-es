@@ -1,0 +1,39 @@
+{
+  "schema_version": "zcg-template-v1",
+  "template_id": "geo-es",
+  "kind": "context-stack",
+  "target_role": "knowledge",
+  "description": "Spain Territorial Organization (ISO 3166-2:ES), Autonomous Communities & Bioregional Atlas",
+  "recommended_surface_bindings": [
+    {
+      "binding_id": "geo-es-surface-binding",
+      "description": "Spain Territorial Organization (ISO 3166-2:ES), Autonomous Communities & Bioregional Atlas",
+      "mode": "authoritative",
+      "target_globs": [
+        "*"
+      ],
+      "architectural_planes": [
+        "*"
+      ],
+      "scopes": [
+        "*"
+      ],
+      "traits": [
+        "*"
+      ],
+      "default_resolution": "L2",
+      "invariants": [
+        "Enforce geo-es (context-stack) rules and canonical assets"
+      ],
+      "rule_files": [
+        "templates/geo-es/rules/geo-es.md"
+      ],
+      "canonical_templates": [
+        "templates/geo-es/skills/geo-es-guide/SKILL.md",
+        "templates/geo-es/assets/canonical_snippet.md"
+      ]
+    }
+  ],
+  "stack_group": "context-stack",
+  "extends": "scientific-methodology"
+}
