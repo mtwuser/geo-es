@@ -40,7 +40,17 @@
     "localhost_url": "http://127.0.0.1:8720/?env=dev"
   },
   "mounted_layers": [],
-  "fleet_plugin_inventory": [],
+  "fleet_plugin_inventory": [
+    {
+      "workspace_id": "geo-es",
+      "workspace_path": ".",
+      "plugin_id": "node-work-cockpit",
+      "status": "healthy",
+      "environment": "dev",
+      "daemon_active": false,
+      "localhost_url": "http://127.0.0.1:8720/?env=dev"
+    }
+  ],
   "cloud_iac_target": {
     "provider": "google-cloud-iac",
     "environment": "dev",

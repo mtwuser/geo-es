@@ -36,9 +36,9 @@
       "latency_budget_ms": 200,
       "http_poll_stop_status": 286
     },
-    "riaa_telemetry": {
+    "runtime_telemetry": {
       "regime": "OPTIMAL",
-      "fitness_score": 1.0,
+      "health_score": 1.0,
       "telemetry_sink": ".agents/telemetry",
       "ledger_bridge": "WORKTASK.md"
     },

@@ -12,7 +12,7 @@ epistemic_grade: E3
 
 ## 1. Master Table of Autonomous Communities & Cities (`ISO 3166-2:ES`, `NUTS-2`, `INE` & Fiscal Regime) [E3]
 
-> **Exon [E3]:** *Use the exact `ISO 3166-2:ES` code (`ES-AN`..`ES-VC`, `ES-CE`, `ES-ML`) and 2-digit `INE CPRO` (`01..52`) to determine fiscal jurisdiction (`IVA` vs. `Foral` vs. `IGIC` vs. `IPSI`), `UTM` projection zone, and bioregional classification ([01_territorial_organization_and_bioregional_model.md](../architecture/01_territorial_organization_and_bioregional_model.md)).*
+> **Summary [E3]:** *Use the exact `ISO 3166-2:ES` code (`ES-AN`..`ES-VC`, `ES-CE`, `ES-ML`) and 2-digit `INE CPRO` (`01..52`) to determine fiscal jurisdiction (`IVA` vs. `Foral` vs. `IGIC` vs. `IPSI`), `UTM` projection zone, and bioregional classification ([01_territorial_organization_and_bioregional_model.md](../architecture/01_territorial_organization_and_bioregional_model.md)).*
 
 Each Autonomous Community and Autonomous City is indexed below with its Eurostat `NUTS-2` code, `INE` provinces (`CPRO`), fiscal regime, `UTM` zone, and bioregion:
 
@@ -42,7 +42,7 @@ Each Autonomous Community and Autonomous City is indexed below with its Eurostat
 
 ## 2. Insular `NUTS-3` Units: *Consells Insulars* (`ES-IB`) & *Cabildos Insulares* (`ES-CN`) [E3]
 
-> **Exon [E3]:** *In `ES-IB` (`07`) and `ES-CN` (`35`, `38`), island-level statistical and administrative governance operates per island (`NUTS-3`) rather than solely at provincial level (`Art. 141.4 CE`).*
+> **Summary [E3]:** *In `ES-IB` (`07`) and `ES-CN` (`35`, `38`), island-level statistical and administrative governance operates per island (`NUTS-3`) rather than solely at provincial level (`Art. 141.4 CE`).*
 
 The `11` official island administrations and their Eurostat `NUTS-3` / `INE` insular codes are listed below:
 
@@ -63,7 +63,7 @@ The `11` official island administrations and their Eurostat `NUTS-3` / `INE` ins
 
 ## 3. Official Hydrographic Basin Districts (`Demarcaciones Hidrográficas`, `RD 125/2007` & `DMA 2000/60/EC`) [E3]
 
-> **Exon [E3]:** *Water concessions, industrial discharge permits (`Autorización de Vertido`, `RDLeg 1/2001 TRLA`), and flood-zone constraints follow hydrographic watershed boundaries (`Confederaciones Hidrográficas` for inter-community rivers vs. Autonomous Water Agencies for intra-community basins).*
+> **Summary [E3]:** *Water concessions, industrial discharge permits (`Autorización de Vertido`, `RDLeg 1/2001 TRLA`), and flood-zone constraints follow hydrographic watershed boundaries (`Confederaciones Hidrográficas` for inter-community rivers vs. Autonomous Water Agencies for intra-community basins).*
 
 The table below indexes Spain's major inter-community and intra-community River Basin Districts (`Demarcaciones Hidrográficas`):
 

@@ -12,7 +12,7 @@ epistemic_grade: E1
 
 ## 1. Deterministic 3-Scenario Cross-Layer Workflows (`geo-es <-> gov-es <-> sci-biology`) [E1]
 
-> **Exon [E1]:** *From a single 5-digit Spanish postal code (`PPNNN`) or `ISO 3166-2:ES` region, derive deterministically: (1) fiscal tax & e-invoicing regime, (2) `EPSG` geodetic coordinate system & river basin authority, and (3) EU biogeographical flora/biomass eligibility ([01_iso_3166_2_es_autonomous_communities_and_provinces.md](../reference/01_iso_3166_2_es_autonomous_communities_and_provinces.md)).*
+> **Summary [E1]:** *From a single 5-digit Spanish postal code (`PPNNN`) or `ISO 3166-2:ES` region, derive deterministically: (1) fiscal tax & e-invoicing regime, (2) `EPSG` geodetic coordinate system & river basin authority, and (3) EU biogeographical flora/biomass eligibility ([01_iso_3166_2_es_autonomous_communities_and_provinces.md](../reference/01_iso_3166_2_es_autonomous_communities_and_provinces.md)).*
 
 Apply the three canonical resolution flows below across software, logistics, and environmental compliance workflows:
 
@@ -47,7 +47,7 @@ make consult LAYER=geo-es QUERY="ES-CN REGCAN95 IGIC"
 
 ## 2. Progressive `M1 -> M4` Consumer Adaptation Matrix [E1]
 
-> **Exon [E1]:** *`geo-es` scales from school/university geography (`M1..M2`) to automated ERP/GIS software validation (`M3`) and multi-basin environmental/fiscal auditing (`M4`).*
+> **Summary [E1]:** *`geo-es` scales from school/university geography (`M1..M2`) to automated ERP/GIS software validation (`M3`) and multi-basin environmental/fiscal auditing (`M4`).*
 
 The table below summarizes how different personas consume `geo-es` via `rcap1` capsules:
 

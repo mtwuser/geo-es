@@ -25,7 +25,7 @@
       "default_tier": "T1",
       "latency_budget_ms": 200,
       "http_poll_stop_status": 286,
-      "riaa_telemetry_sink": ".agents/telemetry"
+      "telemetry_sink": ".agents/telemetry"
     }
   },
   "recommended_surface_bindings": [],

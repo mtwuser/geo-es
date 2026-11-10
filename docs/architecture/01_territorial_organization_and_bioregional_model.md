@@ -12,7 +12,7 @@ epistemic_grade: E3
 
 ## 1. 4-Tier Territorial, Administrative & Eurostat `NUTS` Hierarchy (`Art. 137 CE`, `INE` & `Eurostat`) [E3]
 
-> **Exon [E3]:** *Spain's territory maps deterministically onto `7` `NUTS-1` macro-regions, `17` Autonomous Communities + `2` Autonomous Cities (`ISO 3166-2:ES`, `NUTS-2`), `50` Provinces + `11` Island units (`INE CPRO 01..52`, `NUTS-3`), and `8,132` Municipalities (`LAU`, 5-digit `INE` code) ([01_iso_3166_2_es_autonomous_communities_and_provinces.md](../reference/01_iso_3166_2_es_autonomous_communities_and_provinces.md)).*
+> **Summary [E3]:** *Spain's territory maps deterministically onto `7` `NUTS-1` macro-regions, `17` Autonomous Communities + `2` Autonomous Cities (`ISO 3166-2:ES`, `NUTS-2`), `50` Provinces + `11` Island units (`INE CPRO 01..52`, `NUTS-3`), and `8,132` Municipalities (`LAU`, 5-digit `INE` code) ([01_iso_3166_2_es_autonomous_communities_and_provinces.md](../reference/01_iso_3166_2_es_autonomous_communities_and_provinces.md)).*
 
 The table below defines the official statistical and constitutional hierarchy governing territorial identification in Spain:
 
@@ -33,7 +33,7 @@ Every Spanish municipality and postal address obeys two strict structural invari
 
 ## 2. Geodetic Reference Systems, `UTM` Meridian Cut-Points & Altimetric Datums (`RD 1071/2007`) [E3]
 
-> **Exon [E3]:** *Under `Real Decreto 1071/2007` (`BOE-A-2007-15822`), all official cartography, GIS coordinates, and environmental/cadastral filings in Spain must use **`ETRS89`** (`EPSG:4258`) on the Iberian Peninsula, Balearic Islands, Ceuta, and Melilla, and **`REGCAN95`** (`EPSG:4081`) in the Canary Islands.*
+> **Summary [E3]:** *Under `Real Decreto 1071/2007` (`BOE-A-2007-15822`), all official cartography, GIS coordinates, and environmental/cadastral filings in Spain must use **`ETRS89`** (`EPSG:4258`) on the Iberian Peninsula, Balearic Islands, Ceuta, and Melilla, and **`REGCAN95`** (`EPSG:4081`) in the Canary Islands.*
 
 Spatial coordinates, parcel boundaries (*Catastro*), and watershed models must respect the exact geodetic and `UTM` zone cut-points below:
 
@@ -48,7 +48,7 @@ Spatial coordinates, parcel boundaries (*Catastro*), and watershed models must r
 
 ## 3. Biogeographical Regions & Rivas-Martínez Bioclimatic Belts (`EU 92/43/EEC` & `MITECO`) [E3]
 
-> **Exon [E3]:** *Spain is the only EU Member State spanning four Biogeographical Regions (`Mediterranean`, `Atlantic`, `Alpine`, `Macaronesian`), governing native species eligibility (`RD 630/2013`), agro-forestry biomass sourcing, and `Natura 2000` conservation gates.*
+> **Summary [E3]:** *Spain is the only EU Member State spanning four Biogeographical Regions (`Mediterranean`, `Atlantic`, `Alpine`, `Macaronesian`), governing native species eligibility (`RD 630/2013`), agro-forestry biomass sourcing, and `Natura 2000` conservation gates.*
 
  Ecological, agricultural, and circular-economy operations classify every Spanish site across the four official EU Biogeographical Regions ([01_territorial_logistics_and_bioregional_sourcing_guide.md](../guides/01_territorial_logistics_and_bioregional_sourcing_guide.md)):
 
