@@ -36,25 +36,47 @@
       "pro": "public-remote-live"
     },
     "remote_production_url": "https://github.com/mtwuser/geo-es.git",
-    "active_subdomain_url": "https://dev.geo-es.knowledge.local",
-    "localhost_url": "http://127.0.0.1:8720/?env=dev"
+    "active_subdomain_url": "https://geo-es.knowledge.local",
+    "localhost_url": "http://127.0.0.1:8720/?env=pro",
+    "local_subdomain_host": "geo-es.localhost",
+    "local_subdomain_url": "http://geo-es.localhost:8720/?env=pro",
+    "local_subdomain_dashboard_url": "http://geo-es.localhost:8720/dashboard",
+    "local_subdomain_urls": {
+      "dev": "http://dev.geo-es.localhost:8720/?env=dev",
+      "tst": "http://tst.geo-es.localhost:8720/?env=tst",
+      "pre": "http://pre.geo-es.localhost:8720/?env=pre",
+      "pro": "http://geo-es.localhost:8720/?env=pro"
+    },
+    "domain_governance": {
+      "governing_root_id": "geo-es",
+      "canonical_domain": "",
+      "intranet_zone": "",
+      "local_dev_zone": "geo-es.localhost",
+      "dns_publication": "public-authoritative",
+      "dns_authority": {
+        "governed_by": "geo-es",
+        "delegated_operator_layer": "geo-es",
+        "required_role": "owner",
+        "provider": "google-cloud-dns"
+      }
+    }
   },
   "mounted_layers": [],
   "fleet_plugin_inventory": [
     {
       "workspace_id": "geo-es",
       "workspace_path": ".",
-      "plugin_id": "node-work-cockpit",
+      "plugin_id": "knowledge-stewardship-portal",
       "status": "healthy",
-      "environment": "dev",
+      "environment": "pro",
       "daemon_active": false,
-      "localhost_url": "http://127.0.0.1:8720/?env=dev"
+      "localhost_url": "http://geo-es.localhost:8720"
     }
   ],
   "cloud_iac_target": {
     "provider": "google-cloud-iac",
-    "environment": "dev",
-    "stage": "local-cockpit",
+    "environment": "pro",
+    "stage": "production-cloud-run-gke",
     "iac_manifest": "surfaces/infra/cloud_deployment.json"
   }
 }
