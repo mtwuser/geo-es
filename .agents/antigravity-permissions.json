@@ -1,0 +1,24 @@
+{
+  "schema_version": "zcg-agy-permissions-v1",
+  "layer_id": "geo-es",
+  "governance_posture": "sovereign",
+  "purpose_archetype": "knowledge",
+  "environment": "dev",
+  "global_config_mutated": false,
+  "non_workspace_file_access": "workspace-only",
+  "read_only_grants": [],
+  "browser_allowlist": [
+    "http://dev.geo-es.localhost:8722",
+    "http://127.0.0.1:8722"
+  ],
+  "allowed_egress_domains": [],
+  "cdn_origins": [],
+  "artifact_mirrors": {
+    "container_registry": "",
+    "pypi_index_url": "",
+    "apt_mirror_url": "",
+    "require_private_mirrors": false
+  },
+  "internet_access_policy": "loopback-and-vcs",
+  "auto_execution_policy": "bounded-safe"
+}

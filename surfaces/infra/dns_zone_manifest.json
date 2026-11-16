@@ -1,10 +1,11 @@
 {
   "schema_version": "zcg-dns-zone-v1",
   "layer_id": "geo-es",
-  "local_rfc6761_subdomain": "geo-es.localhost",
+  "local_rfc6761_subdomain": "dev.geo-es.localhost",
   "domain_governance": {
     "governing_root_id": "geo-es",
     "canonical_domain": "",
+    "developer_domain": "",
     "intranet_zone": "",
     "local_dev_zone": "geo-es.localhost",
     "dns_publication": "public-authoritative",

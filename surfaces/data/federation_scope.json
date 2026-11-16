@@ -8,7 +8,7 @@
   "intranet_topology": {
     "base_domain": "geo-es.knowledge.local",
     "node_host": "geo-es.knowledge.local",
-    "port": 8720,
+    "port": 8722,
     "promotion_pipeline": "staged",
     "visibility": "public",
     "environment_promotion_order": [
@@ -24,10 +24,10 @@
       "pro": "https://geo-es.knowledge.local"
     },
     "local_environment_urls": {
-      "dev": "http://127.0.0.1:8720/?env=dev",
-      "tst": "http://127.0.0.1:8720/?env=tst",
-      "pre": "http://127.0.0.1:8720/?env=pre",
-      "pro": "http://127.0.0.1:8720/?env=pro"
+      "dev": "http://127.0.0.1:8722/?env=dev",
+      "tst": "http://127.0.0.1:8722/?env=tst",
+      "pre": "http://127.0.0.1:8722/?env=pre",
+      "pro": "http://127.0.0.1:8722/?env=pro"
     },
     "environment_reachability": {
       "dev": "local-loopback-only",
@@ -36,20 +36,21 @@
       "pro": "public-remote-live"
     },
     "remote_production_url": "https://github.com/mtwuser/geo-es.git",
-    "active_subdomain_url": "https://geo-es.knowledge.local",
-    "localhost_url": "http://127.0.0.1:8720/?env=pro",
-    "local_subdomain_host": "geo-es.localhost",
-    "local_subdomain_url": "http://geo-es.localhost:8720/?env=pro",
-    "local_subdomain_dashboard_url": "http://geo-es.localhost:8720/dashboard",
+    "active_subdomain_url": "https://dev.geo-es.knowledge.local",
+    "localhost_url": "http://127.0.0.1:8722/?env=dev",
+    "local_subdomain_host": "dev.geo-es.localhost",
+    "local_subdomain_url": "http://dev.geo-es.localhost:8722/?env=dev",
+    "local_subdomain_dashboard_url": "http://dev.geo-es.localhost:8722/dashboard",
     "local_subdomain_urls": {
-      "dev": "http://dev.geo-es.localhost:8720/?env=dev",
-      "tst": "http://tst.geo-es.localhost:8720/?env=tst",
-      "pre": "http://pre.geo-es.localhost:8720/?env=pre",
-      "pro": "http://geo-es.localhost:8720/?env=pro"
+      "dev": "http://dev.geo-es.localhost:8722/?env=dev",
+      "tst": "http://tst.geo-es.localhost:8722/?env=tst",
+      "pre": "http://pre.geo-es.localhost:8722/?env=pre",
+      "pro": "http://geo-es.localhost:8722/?env=pro"
     },
     "domain_governance": {
       "governing_root_id": "geo-es",
       "canonical_domain": "",
+      "developer_domain": "",
       "intranet_zone": "",
       "local_dev_zone": "geo-es.localhost",
       "dns_publication": "public-authoritative",
@@ -68,15 +69,15 @@
       "workspace_path": ".",
       "plugin_id": "knowledge-stewardship-portal",
       "status": "healthy",
-      "environment": "pro",
+      "environment": "dev",
       "daemon_active": false,
-      "localhost_url": "http://geo-es.localhost:8720"
+      "localhost_url": "http://dev.geo-es.localhost:8722"
     }
   ],
-  "cloud_iac_target": {
-    "provider": "google-cloud-iac",
-    "environment": "pro",
-    "stage": "production-cloud-run-gke",
-    "iac_manifest": "surfaces/infra/cloud_deployment.json"
+  "deployment_target": {
+    "provider": "local-sovereign",
+    "environment": "dev",
+    "stage": "local-loopback-w3c",
+    "iac_manifest": "none"
   }
 }

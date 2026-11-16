@@ -2,6 +2,11 @@
 
 All notable changes to this public epistemic knowledge corpus are documented in this file.
 
+## [Unreleased]
+
+### Changed
+- **Reconciled onto Consolidated `ZeroCloudGravity v1.2.0` (`:8722`)**: Upgraded `knowledge-stewardship-portal` (`data_pipeline`, `5`-lens `Zone.Z4` `spatial_atlas` including coarse `geographic-residency`, `tool_stack`, `crud`, `vault`, `telemetry`), assigned collision-free `cockpit_port: 8722` (`http://geo-es.localhost:8722`), normalized `refs/zcg/capsules`, and added `.zcg/` `.gitignore` isolation (`100/100` security posture).
+
 ## [1.0.0] - 2026-11-11
 
 ### Added
