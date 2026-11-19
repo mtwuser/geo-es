@@ -9,9 +9,18 @@
   "read_only_grants": [],
   "browser_allowlist": [
     "http://dev.geo-es.localhost:8722",
-    "http://127.0.0.1:8722"
+    "http://127.0.0.1:8722",
+    "https://cnig.es",
+    "https://github.com",
+    "https://ign.es",
+    "https://zerocloudgravity.org"
   ],
-  "allowed_egress_domains": [],
+  "allowed_egress_domains": [
+    "cnig.es",
+    "github.com",
+    "ign.es",
+    "zerocloudgravity.org"
+  ],
   "cdn_origins": [],
   "artifact_mirrors": {
     "container_registry": "",
@@ -19,6 +28,6 @@
     "apt_mirror_url": "",
     "require_private_mirrors": false
   },
-  "internet_access_policy": "loopback-and-vcs",
+  "internet_access_policy": "curated-allowlist",
   "auto_execution_policy": "bounded-safe"
 }
